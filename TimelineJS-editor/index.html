@@ -8,6 +8,11 @@
 </head>
 <body>
   <div id='editor'></div>
+  <script>
+    if (window.location.protocol === "http:") {
+      window.location.href = window.location.href.replace("http:", "https:");
+    }
+  </script>
   <script src='js/timeline-editor.min.js'></script>
   <script>
     mhtEditor({
